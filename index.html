@@ -38,20 +38,20 @@
   <p>
     If you aren’t living in a cave, chances are, you are interacting with
     machine learning systems on a daily basis. Machine learning is a subfield
-    of computer science that finds patterns in data to perform tasks.
+    of computer science that finds patterns in data to perform tasks (Karpathy).
     Facebook uses it to tag faces. Google uses it to suggest you ads for things
     that seem
     <a href="https://www.theguardian.com/technology/2016/oct/21/how-to-disable-google-ad-tracking-gmail-youtube-browser-history">creepily similar</a>
     to what you were browsing last night. Apple uses
     it to make Siri respond to language more naturally. Instead of relying on
     preprogrammed rules, machine learning programs learn from data that they
-    are given.
+    are given (Karpathy).
   </p>
   <p>
     This has served many applications well, because for many problems, it’s a
     lot harder to manually write rules for a task than to let the computer
-    figure it out from data. For example, it is hard to describe what a face
-    is numerically, but machine learning algorithms can figure that out from
+    figure it out from data (Karpathy). For example, it is hard to describe what
+    a face is numerically, but machine learning algorithms can figure that out from
     examples. In other cases, these systems automatically produce more useful
     rules to help classify data than human data analysts can do manually, saving
     us effort while achieving higher performance. This is leading to a paradigm
@@ -65,18 +65,18 @@
     As machine learning technology matures, it starts to impact us in more
     profound ways than just Siri or photo tagging. They also assist in decision
     making or sometimes even make decisions autonomously in areas like criminal
-    justice, loan approval, and finance. Since machine learning involves statistics
+    justice, loan approval, and finance . Since machine learning involves statistics
     and data, it is assumed to be neutral or more reliable than human decision makers
     (Barocas). However, data is not objective. There are biases from historical data
     resulting from intentional discriminatory actions in the past or even previously
     unknown patterns of inequality (Barocas). Data-based decision making systems
-    will only perpetuate these biases. For example, loan approval systems might
-    overestimate the risk of African Americans defaulting on loans because there are
-    more instances of them doing so in the data. Machine learning is used to recognize
-    patterns in data and make predictions about things that it hasn’t seen. It’s a
-    general purpose technology relevant to many fields. As these systems help make
-    more decisions, they also have more power to do harm. Therefore, we must
-    investigate this potential for bias and how to mitigate its damage.
+    will only perpetuate these biases (Barcocas). For example, loan approval systems
+    might overestimate the risk of African Americans defaulting on loans because there
+    are more instances of them doing so in the data. Machine learning is used to
+    recognize patterns in data and make predictions about things that it hasn’t seen.
+    It’s a general purpose technology relevant to many fields. As these systems help
+    make more decisions, they also have more power to do harm (Knight). Therefore, we
+    must investigate this potential for bias and how to mitigate its damage.
   </p>
   <p>
     A tool used in criminal justice departments around the country is called COMPAS,
@@ -109,14 +109,14 @@
 
   <h2>Machine Learning Techniques</h2>
   <p>
-    Machine learning can perform either classification or regression. Classification
-    means classifying a data point as belonging to a category, and regression means
-    predicting a real-numbered value. An example classification problem could be predicting
-    whether an image is a dog or a cat, while an example regression problem could be
-    predicting the prices of houses. Each data point contains multiple types of information
-    about a single subject, called features. Features could be age, gender, whether
-    someone has a house, or answers to a questionnaire. Machine learning uses features
-    to make predictions.
+    Machine learning can perform either classification or regression (Goodfellow).
+    Classification means classifying a data point as belonging to a category, and
+    regression means predicting a real-numbered value. An example classification
+    problem could be predicting whether an image is a dog or a cat, while an example
+    regression problem could be predicting the prices of houses. Each data point
+    contains multiple types of information about a single subject, called features.
+    Features could be age, gender, whether someone has a house, or answers to a
+    questionnaire. Machine learning uses features to make predictions (Goodfellow).
   </p>
 
   <h3>Decision Trees</h3>
@@ -237,9 +237,9 @@
     connected, and one factor might be more important in the presence of another
     factor (Adebayo, “FairML”). Adebayo’s FairML counteracts this through orthogonal
     transformation of the input data, a technique that removes all linear relationships
-    between features. To illustrate how easy it is to audit a model with FairML,
-    here’s all the code that’s needed to audit a model and graph the importance
-    of the features.
+    between features (Adebayo, "Iterative"). To illustrate how easy it is to audit a
+    model with FairML, here’s all the code that’s needed to audit a model and graph
+    the importance of the features.
   </p>
   <d-code language="python">
     from fairml import audit_model, plot_dependencies
@@ -552,9 +552,15 @@
       arxiv.org/abs/1606.08813</a>.
   </p>
   <p>
-    Karpathy, Andrew. "Software 2.0." <i>Medium,</i> 11 Nov. 2017,
+    Karpathy, Andrej. "Software 2.0." <i>Medium,</i> 11 Nov. 2017,
     <a href="https://medium.com/@karpathy/software-2-0-a64152b37c35">
       medium.com/@karpathy/software-2-0-a64152b37c35</a>.
+  </p>
+  <p>
+    Knight, Will. "Biased Algorithms Are Everywhere, and No One Seems to Care."
+    <i>MIT Technology Review,</i> 12 July 2017,
+    <a href="www.technologyreview.com/s/608248/biased-algorithms-are-everywhere-and-no-one-seems-to-care/">
+      technologyreview.com/s/608248/biased-algorithms-are-everywhere-and-no-one-seems-to-care/</a>.
   </p>
   <p>
     Larson, Jeff, et al. "How We Analyzed the COMPAS Recidivism Algorithm."
