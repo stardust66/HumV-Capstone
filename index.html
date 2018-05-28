@@ -272,6 +272,16 @@
     <a href="https://github.com/adebayoj/fairml#code-demo">FairML demo</a>.
   </figcaption>
 
+  <p>
+    This audit says that in COMPAS, of all the features, the number of prior offenses
+    contribute the most to the final prediction, followed by whether the person is
+    African American. This clearly shows bias, because even when the effects of each
+    feature is separated through orthogonal feature projection, being African
+    American is still the second biggest factor contributing to someone’s risk
+    score. With FairML we reproduced ProPublica’s results in a fraction of the
+    time, showing the potential for this tool to audit ML systems.
+  </p>
+
   <h3>Explanations</h3>
   <p>
     A related technique for detecting discrimination is to get explanations from
