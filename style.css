@@ -13,8 +13,44 @@ circle {
   stroke-width: 2.5px;
 }
 
-#interactive {
-  border: 2px solid black;
-  height: 350px;
-  overflow: hidden;
+.center {
+  text-align: center;
+}
+
+/* Hanging Indent for Citations */
+d-appendix p {
+  padding-left: 30px;
+  text-indent: -30px;
+}
+
+.equation {
+  text-align: center;
+}
+
+img.small {
+  width: 50%;
+}
+
+img.medium {
+  width: 80%;
+}
+
+/* Give captions some room */
+figure > :first-child:not(p) {
+  margin-bottom: 20px;
+}
+
+figure .js-plotly-plot + figcaption {
+  margin-top: 20px;
+}
+
+.center .plotly.plot-container .svg-container {
+  margin: 0 auto;
+}
+
+/* Make gutter captions line up with figure */
+@media screen and (min-width: 768px) {
+  figure + figcaption.l-gutter {
+    padding-top: 50px;
+  }
 }
